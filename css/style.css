@@ -1,3 +1,5 @@
+/* GENERAL */
+
 *{
   margin: 0;
   padding: 0;
@@ -9,12 +11,12 @@ body{
 }
 
 main{
-  padding: 60px 270px;
+  padding: 60px 70px;
   text-align: center;
 }
 
 .container{
-  width: 100%;
+  width: 90%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -23,9 +25,7 @@ img{
   max-width: 420px;
 }
 
-.debug{
-  border: 1px solid black;
-}
+/* HEADER */
 
 header{
   z-index: 999;
@@ -36,6 +36,7 @@ header{
   width: 100%;
   background-color: #FF6900;
   text-align: center;
+  box-shadow: 0 0 10px 2px #A6ADAE;;
 }
 
 header .container{
@@ -72,19 +73,29 @@ header .container .icons{
   color: white;
 }
 
+/* MAIN */
 
-.product-image{
-  height: 650px;
-  display: inline-block;
-  position: relative;
+main .container{
+  width: 100%;
 }
 
 .product{
-  height: 700px;
   display: inline-block;
   position: relative;
   margin: 50px 20px;
 }
+
+/* .product-image{
+  position: relative;
+  display: inline;
+}
+
+.product-image:hover .image-hover{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
+
 
 .product-image .heart{
   color:black;
@@ -102,9 +113,9 @@ header .container .icons{
 }
 
 .product-image .discount{
-  position: relative;
+  position: absolute;
   padding: 6px;
-  bottom: 70px;
+  bottom: 100px;
   left: 0;
   width: 60px;
   font-size: 10px;
@@ -113,9 +124,9 @@ header .container .icons{
 }
 
 .product-image .eco{
-  position: relative;
+  position: absolute;
   padding: 6px;
-  bottom: 96px;
+  bottom: 100px;
   left: 66px;
   width: 104px;
   font-size: 10px;
@@ -124,9 +135,6 @@ header .container .icons{
 }
 
 .product .product-details{
-  position: absolute;
-  bottom: 0;
-  left: 0;
   text-align: left;
   line-height: 20px;
 }
@@ -150,3 +158,48 @@ header .container .icons{
   text-decoration: line-through;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: #1A1A1A;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-name{
+  font-weight: bold;
+}
+
+footer .menu ul{
+  list-style: none;
+  display: flex;
+  padding-top: 5px;
+}
+
+footer .menu ul li{
+  margin: 0 10px;
+}
+
+footer .container .menu ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+footer .container .menu ul li a:hover{
+  text-decoration: underline;
+}
+
+footer .container .icons{
+  color: white;
+  text-align: right;
+}
