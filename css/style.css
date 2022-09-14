@@ -71,6 +71,7 @@ header .container .menu ul li a:hover{
 
 header .container .icons{
   color: white;
+  padding-top: 5px;
 }
 
 /* MAIN */
@@ -85,17 +86,25 @@ main .container{
   margin: 50px 20px;
 }
 
-/* .product-image{
-  position: relative;
-  display: inline;
+.product-image .image-main{
+  display: block;
 }
 
-.product-image:hover .image-hover{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-} */
+.product-image .image-hover{
+  display: none;
+}
 
+.product-image.pics{
+  float: left;
+}
+
+.product-image.pics:hover .image-main{
+display: none;
+}
+
+.product-image.pics:hover .image-hover{
+  display: block;
+  }
 
 .product-image .heart{
   color:black;
