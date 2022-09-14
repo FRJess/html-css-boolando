@@ -15,7 +15,7 @@ main{
 
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -56,13 +56,22 @@ header .menu ul{
 }
 
 header .menu ul li{
-  margin: 0 17px;
+  margin: 0 10px;
 }
 
 header .container .menu ul li a{
   color: white;
   text-decoration: none;
 }
+
+header .container .menu ul li a:hover{
+  text-decoration: underline;
+}
+
+header .container .icons{
+  color: white;
+}
+
 
 .product-image{
   height: 650px;
@@ -74,6 +83,7 @@ header .container .menu ul li a{
   height: 700px;
   display: inline-block;
   position: relative;
+  margin: 50px 20px;
 }
 
 .product-image .heart{
@@ -118,6 +128,7 @@ header .container .menu ul li a{
   bottom: 0;
   left: 0;
   text-align: left;
+  line-height: 20px;
 }
 
 .marchio{
@@ -134,4 +145,8 @@ header .container .menu ul li a{
   color: #FF0000;
 }
 
+.prezzo-intero{
+  color: #868482;
+  text-decoration: line-through;
+}
 
